@@ -1,0 +1,20 @@
+A: The encoded identifiers used for the functions:
+	
+	00000000004004b4 T _Z7averagePdRd
+	00000000004004e2 T _Z7averageif
+	000000000040050a T main
+
+B: Output:1 8
+          4 8
+		  4 8
+		  8 8
+
+  reason:size of char = 1 byte
+		 size of int = 4 byte
+		 size of double = 4 btye
+		 size of float = 8 byte
+
+  No matter what char,int,double,float sizes are, their pointer type are the same.
+  In a 32bit system, it size is 4 bytes, while in a 64bit system, it size is 8 byte.
+
+
